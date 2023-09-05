@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/earonesty/qchat.git"
   },
-  {
   "engines": {
     "node": ">=10"
   },

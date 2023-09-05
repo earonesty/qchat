@@ -1,0 +1,35 @@
+{
+  "name": "q-chat",
+  "version": "1.0.0",
+  "description": "a simple chat widget",
+  "main": "q-chat.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earonesty/qchat.git"
+  },
+  "keywords": [
+    "chat",
+    "live",
+    "chat",
+    "web",
+    "chat",
+    "customer",
+    "support"
+  ],
+  "author": "erik@q32.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/earonesty/qchat/issues"
+  },
+  "homepage": "https://github.com/earonesty/qchat#readme",
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^6.1.2",
+    "jest": "^29.6.4",
+    "jest-environment-jsdom": "^29.6.4",
+    "jsdom": "^22.1.0"
+  }
+}

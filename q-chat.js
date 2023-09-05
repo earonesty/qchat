@@ -129,14 +129,26 @@
     });
   }
 
+  function setTitle(title) {
+    let titleElement = document.getElementById('chat-title');
+    if (!titleElement) {
+      // Create title element if it doesn't exist
+      titleElement = document.createElement('div');
+      titleElement.id = 'chat-title';
+     // Insert the title at the top of the chat window
+      chatWindow.insertBefore(titleElement, chatWindow.firstChild);
+    }
+    titleElement.textContent = title;
+  }
+
   const qChat = {
     receiveMessage,
     sendMessage,
     onSend,
     getMessages,
-    setMessages
+    setMessages,
+    setTitle
   }
-
 
   window.qChat = qChat
 
@@ -201,6 +213,12 @@
   height: 24px;
   cursor: pointer;
   padding-right: 10px;
+}
+
+#chat-title {
+  backgroundColor: gray;
+  color: white;
+  padding: 10px;
 }
 
 .user-message {
